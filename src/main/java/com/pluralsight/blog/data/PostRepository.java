@@ -51,6 +51,14 @@ public class PostRepository {
     }
 
     public Post findById(Long id) {
-        return null;
+        for(Post p: ALL_POSTS) {
+        	if (p.getId() == id)
+        		return p;
+        				
+        }
+
+
+        	return null;
+        	
     }
 }
